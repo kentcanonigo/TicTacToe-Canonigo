@@ -1,5 +1,5 @@
 ﻿namespace TicTacToe_Canonigo {
-    partial class Form1 {
+    partial class mainMenuForm {
         /// <summary>
         ///  Required designer variable.
         /// </summary>
@@ -110,14 +110,14 @@
             tableLayoutPanel1.Size = new Size(800, 450);
             tableLayoutPanel1.TabIndex = 5;
             // 
-            // Form1
+            // mainMenuForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
             Controls.Add(tableLayoutPanel1);
-            Name = "Form1";
-            Text = "Form1";
+            Name = "mainMenuForm";
+            Text = "Main Menu";
             tableLayoutPanel1.ResumeLayout(false);
             ResumeLayout(false);
         }
