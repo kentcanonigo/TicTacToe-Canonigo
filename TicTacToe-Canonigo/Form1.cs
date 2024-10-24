@@ -3,5 +3,21 @@ namespace TicTacToe_Canonigo {
         public Form1() {
             InitializeComponent();
         }
+        private void startButton_Click(object sender, EventArgs e) {
+
+        }
+
+        private void exitButton_Click(object sender, EventArgs e) {
+
+        }
+
+
+        private void helpButton_Click(object sender, EventArgs e) {
+
+        }
+
+        private void aboutButton_Click(object sender, EventArgs e) {
+
+        }
     }
 }
