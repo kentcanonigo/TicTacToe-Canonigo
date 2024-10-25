@@ -23,11 +23,14 @@
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent() {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AboutForm));
             pictureBox1 = new PictureBox();
             label1 = new Label();
             linkLabel1 = new LinkLabel();
             linkLabel2 = new LinkLabel();
             button1 = new Button();
+            label2 = new Label();
+            label3 = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -54,7 +57,7 @@
             // linkLabel1
             // 
             linkLabel1.AutoSize = true;
-            linkLabel1.Location = new Point(123, 343);
+            linkLabel1.Location = new Point(12, 332);
             linkLabel1.Name = "linkLabel1";
             linkLabel1.Size = new Size(58, 15);
             linkLabel1.TabIndex = 2;
@@ -65,7 +68,7 @@
             // linkLabel2
             // 
             linkLabel2.AutoSize = true;
-            linkLabel2.Location = new Point(123, 358);
+            linkLabel2.Location = new Point(242, 332);
             linkLabel2.Name = "linkLabel2";
             linkLabel2.Size = new Size(52, 15);
             linkLabel2.TabIndex = 3;
@@ -75,7 +78,7 @@
             // 
             // button1
             // 
-            button1.Location = new Point(88, 401);
+            button1.Location = new Point(83, 448);
             button1.Name = "button1";
             button1.Size = new Size(151, 40);
             button1.TabIndex = 4;
@@ -83,17 +86,39 @@
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
+            // label2
+            // 
+            label2.Font = new Font("Segoe UI Semibold", 18F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            label2.Location = new Point(46, 360);
+            label2.Name = "label2";
+            label2.Size = new Size(229, 85);
+            label2.TabIndex = 5;
+            label2.Text = "You'll never know if you don't try.";
+            label2.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(123, 332);
+            label3.Name = "label3";
+            label3.Size = new Size(63, 15);
+            label3.TabIndex = 6;
+            label3.Text = "BSCpE 4-G";
+            // 
             // AboutForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(317, 453);
+            ClientSize = new Size(317, 500);
+            Controls.Add(label3);
+            Controls.Add(label2);
             Controls.Add(button1);
             Controls.Add(linkLabel2);
             Controls.Add(linkLabel1);
             Controls.Add(label1);
             Controls.Add(pictureBox1);
             FormBorderStyle = FormBorderStyle.FixedSingle;
+            Icon = (Icon)resources.GetObject("$this.Icon");
             MaximizeBox = false;
             Name = "AboutForm";
             Text = "AboutForm";
@@ -109,5 +134,7 @@
         private LinkLabel linkLabel1;
         private LinkLabel linkLabel2;
         private Button button1;
+        private Label label2;
+        private Label label3;
     }
 }

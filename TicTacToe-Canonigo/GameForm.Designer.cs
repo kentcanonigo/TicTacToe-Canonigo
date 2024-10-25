@@ -24,6 +24,7 @@
         /// </summary>
         private void InitializeComponent() {
             components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GameForm));
             player1WinsText = new Label();
             player2WinsText = new Label();
             pictureBox1 = new PictureBox();
@@ -256,6 +257,7 @@
             Controls.Add(player2WinsText);
             Controls.Add(player1WinsText);
             FormBorderStyle = FormBorderStyle.FixedSingle;
+            Icon = (Icon)resources.GetObject("$this.Icon");
             MaximizeBox = false;
             Name = "GameForm";
             Text = "GameForm";

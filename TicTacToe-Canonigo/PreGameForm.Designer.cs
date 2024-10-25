@@ -27,6 +27,7 @@ namespace TicTacToe_Canonigo {
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent() {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PreGameForm));
             label1 = new Label();
             nameTextBox1 = new MaskedTextBox();
             label2 = new Label();
@@ -327,6 +328,7 @@ namespace TicTacToe_Canonigo {
             Controls.Add(flowLayoutPanel2);
             Controls.Add(label1);
             FormBorderStyle = FormBorderStyle.FixedSingle;
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "PreGameForm";
             Text = "Info";
             flowLayoutPanel1.ResumeLayout(false);
