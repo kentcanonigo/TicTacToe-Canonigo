@@ -23,12 +23,14 @@
         ///  the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent() {
+            components = new System.ComponentModel.Container();
             startButton = new Button();
             helpButton = new Button();
             aboutButton = new Button();
             exitButton = new Button();
             label1 = new Label();
             tableLayoutPanel1 = new TableLayoutPanel();
+            contextMenuStrip1 = new ContextMenuStrip(components);
             tableLayoutPanel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -61,7 +63,7 @@
             aboutButton.Name = "aboutButton";
             aboutButton.Size = new Size(157, 81);
             aboutButton.TabIndex = 2;
-            aboutButton.Text = "Huh?";
+            aboutButton.Text = "Who made dis?";
             aboutButton.UseVisualStyleBackColor = true;
             aboutButton.Click += aboutButton_Click;
             // 
@@ -110,6 +112,11 @@
             tableLayoutPanel1.Size = new Size(800, 450);
             tableLayoutPanel1.TabIndex = 5;
             // 
+            // contextMenuStrip1
+            // 
+            contextMenuStrip1.Name = "contextMenuStrip1";
+            contextMenuStrip1.Size = new Size(61, 4);
+            // 
             // mainMenuForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -118,6 +125,7 @@
             Controls.Add(tableLayoutPanel1);
             Name = "mainMenuForm";
             Text = "Main Menu";
+            FormClosed += mainMenuForm_FormClosed;
             tableLayoutPanel1.ResumeLayout(false);
             ResumeLayout(false);
         }
@@ -130,5 +138,6 @@
         private Button exitButton;
         private Label label1;
         private TableLayoutPanel tableLayoutPanel1;
+        private ContextMenuStrip contextMenuStrip1;
     }
 }
